@@ -27,7 +27,7 @@ body {
 
 .calculator {
   width: 400px;
-  background-color: #00253a;
+  background-color: #01253a;
   padding: 50px 30px;
   position: absolute;
   top: 50%;
@@ -57,4 +57,35 @@ body {
 
 .display input::placeholder {
   color:#606079;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  border: none;
+  margin-top: 20px;
+}
+
+.buttons input[type="button"] {
+  font-size: 20px;
+  padding: 17px;
+  border: none;
+  background-color: transparent;
+  color:#ffffffff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buttons input[type="button"]:hover {
+  box-shadow: 0 10px 25px #0D1F30;
+}
+
+.buttons input[type="button"]#equal {
+  grid-row: span 2;
+  background-color: #EB691C;
+}
+
+.buttons input[type="button"][value="0"] {
+  grid-column: span 2;
 }
