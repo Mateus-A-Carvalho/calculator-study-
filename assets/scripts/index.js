@@ -1,6 +1,6 @@
 let equal_pressed = 0;
 
-const button_input = document.querySelectorAll("input-button") // Selecting all buttons, excluding AC and DEL buttons.
+const button_input = document.querySelectorAll(".input-button") // Selecting all buttons, excluding AC and DEL buttons.
 
 const input = document.getElementById("input")
 const clear = document.getElementById("clear")
@@ -21,3 +21,7 @@ button_input.forEach((button_class) => {
     input.value += button_class.value;
   })
 })
+
+equal.addEventListener("click", () => {
+  equal_pressed = 1;
+});
