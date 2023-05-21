@@ -28,11 +28,6 @@
 
 html {
   height: 100%;
-  background: linear-gradient(to bottom,
-  var(--background-light-gradient1),
-  var(--background-light-gradient2)
-  );
-  transition: 0.3s;
 }
 
 body {
@@ -40,6 +35,11 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
+  transition: 0.3s;
+  background: linear-gradient(to bottom,
+  var(--background-light-gradient1),
+  var(--background-light-gradient2)
+  );
   transition: 0.3s;
 }
 

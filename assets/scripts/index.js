@@ -1,7 +1,7 @@
 let equal_pressed = 0;
 
 function toggleDarkMode() {
-  document.html.classList.toogle("dark-theme");
+  document.body.classList.add("dark-theme");
 }
 
 const changeBtnTheme = document.querySelector("#change-theme");
