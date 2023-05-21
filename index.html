@@ -4,11 +4,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
   <title>Calculator | Mateus Carvalho</title>
 </head>
 
-<body>
+<body class="dark-theme">
+  <div>
+    <input type="checkbox" name="change-theme" id="change-theme">
+    <label for="change-theme">
+      <i class="bi bi-brightness-low-fill"></i>
+      <i class="bi bi-moon-stars"></i>
+    </label>
+  </div>
   <div class="calculator">
     <div class="display">
       <input type="text" placeholder="0" id="input" disabled>

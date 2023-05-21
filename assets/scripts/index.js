@@ -1,5 +1,14 @@
 let equal_pressed = 0;
 
+function toggleDarkMode() {
+  document.html.classList.toogle("dark-theme");
+}
+
+const changeBtnTheme = document.querySelector("#change-theme");
+changeBtnTheme.addEventListener("change", () => {
+  toggleDarkMode();
+});
+
 const button_input = document.querySelectorAll(".input-button") // Selecting all buttons, excluding AC and DEL buttons.
 
 const input = document.getElementById("input")
