@@ -49,16 +49,12 @@ body {
 }
 
 .bi-brightness-low-fill {
-  position: absolute;
-  top: 50%;
-  left: 10%;
+  position: relative;
 }
 
 .bi-moon-stars {
   display: none;
-  position: absolute;
-  top: 50%;
-  right: 10%;
+  position: relative;
 }
 
 .calculator {
@@ -75,6 +71,12 @@ body {
   55px 55px 3.5px rgba(0, 0, 0, 0.125),
   70px 70px 10px rgba(0, 0, 0, 0.082),
   130px 130px 30px rgba(0, 0, 0, 0.25);
+}
+ 
+.theme {
+  position: absolute;
+  top: 5%;
+  left: 50%;
 }
 
 .display {
